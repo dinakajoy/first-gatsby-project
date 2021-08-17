@@ -15,7 +15,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
     "gatsby": "^3.11.1",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-source-filesystem": "^3.11.0",

@@ -1,0 +1,93 @@
+.services {
+  width: 100%;
+}
+.services_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin: 50px auto;
+}
+
+.about_title {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 130px;
+  width: 100%;
+}
+.card:nth-child(1),
+.card:nth-child(5) {
+  background-image: url(../images/services/serviceone.jpg);
+}
+.card:nth-child(2),
+.card:nth-child(6) {
+  background-image: url(../images/services/servicetwo.jpg);
+}
+.card:nth-child(3),
+.card:nth-child(7) {
+  background-image: url(../images/services/servicethree.jpg);
+}
+.card:nth-child(4),
+.card:nth-child(8) {
+  background-image: url(../images/services/servicefour.jpg);
+}
+.card::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 0, 0, 0.781);
+}
+.card p {
+  line-height: 1.5;
+}
+.card .card_details {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card a {
+  color: #fff;
+  text-decoration: none;
+}
+.card a:hover {
+  color: #ccc;
+}
+/* Responsive columns */
+@media screen and (min-width: 600px) {
+  .services_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .services_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
