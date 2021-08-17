@@ -4,7 +4,6 @@ import Layout from "../components/common/Layout";
 import * as styles from "../styles/about.module.css";
 
 const ServiceSingle = ({ pageContext: { service } }) => {
-  console.log("service", service);
   return (
     <Layout>
       <section className={styles.service}>
