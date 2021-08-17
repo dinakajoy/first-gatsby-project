@@ -24,11 +24,15 @@ const Navbar = () => {
         <h1>Logo</h1>
       </div>
       <nav className="topnav" id="myTopnav" ref={topNav}>
-        <div className="icon" onClick={toggleMenuIcon} ref={menuIcon}>
+        <button
+          className="icon"
+          onClick={toggleMenuIcon}
+          ref={menuIcon}
+        >
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
-        </div>
+        </button>
         <div className="menus">
           <Link to="/#home" className="active">
             Home

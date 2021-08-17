@@ -81,12 +81,12 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages/services`,
-        name: "services",
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/src/pages/services`,
+    //     name: "services",
+    //   },
+    // },
   ],
 };
